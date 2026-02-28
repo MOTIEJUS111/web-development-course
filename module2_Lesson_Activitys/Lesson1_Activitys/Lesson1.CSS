@@ -1,0 +1,22 @@
+.name{
+    color: red;
+}
+
+
+
+.phonenumber{
+color: black;
+
+}
+
+
+#school{
+
+    color: chocolate;
+}
+
+*{font-size: 40px;}
+
+h5,h6,p{
+    color: blueviolet;
+}
