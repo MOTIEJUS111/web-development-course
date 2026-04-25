@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Arguments ACP</title>
+</head>
+<body>
+    
+<h2> I am going to say where i live</h2>
+<p id="lives">  </p>
+<p id="result">  </p>
+    <script>
+var live={continent:"europe",country:"UK",city:"london"}
+
+document.getElementById("lives").innerHTML=live.continent+ " is where i live. I am in the "+ live.country + " by the city of " + live.city + ".";
+
+function g() {
+var i;
+var op=0;
+for(i=0; i < arguments.length;i++)
+{    
+if(arguments[i]>op)
+{
+op=arguments[i];
+
+}
+
+
+}
+return  op ;
+
+}
+document.getElementById("result").innerHTML=g(7,8,9);
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
