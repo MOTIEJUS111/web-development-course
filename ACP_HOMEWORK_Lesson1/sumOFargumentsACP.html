@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Sum of arguments</title>
+</head>
+<body>
+<p> whats the bigger number? 1, 13, or 17?  </p>
+<p id="result"> </p>
+
+<script>
+
+function iphoneg() {
+var i;
+var best=0;
+for(i=0; i < arguments.length;i++)
+{    
+if(arguments[i]>best)
+{
+best=arguments[i];
+}
+}
+return  best ;
+}
+document.getElementById("result").innerHTML=iphoneg(13,1,17);
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
