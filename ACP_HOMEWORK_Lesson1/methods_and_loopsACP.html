@@ -7,16 +7,19 @@
    <h1> Methods and loops ACP</h1>
     <p id="demo"></p>
 <script>
-var number=["1","2","3","4","5"];
-var f="";
+var numbers=["1","2","3","4"];
+var text="";
 var i;
-for(i=0;i<number.length;i++)
+numbers.pop();  
+document.getElementById("demo").innerHTML=numbers;
+
+for(i=0;i<numbers.length;i++)
 {
- f +=number[i]+"<br>";
+text  +=numbers[i]+"<br>";
 
 
 }
-document.getElementById("demo").innerHTML=f;
+document.getElementById("demo").innerHTML=text;
 </script>
 
 
