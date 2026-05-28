@@ -12,16 +12,49 @@ text-align: center;
 }
 h1{
 color: black;
-
+}
+.cards {
+display: flex;
+justify-content: center;;
+gap: 20px;
+margin-top: 25px;
 
 }
+.card{
+background: white;
+border: 3px orange;
+border-radius: 12px;
+padding: 20px;
+width: 200px;
+}
+.planet-name{
+font-size: 20px;
+font-weight: bold;
+color: blue;
+
+}
+.planet-fact { color: blue; margin-top: 10px; font-size: 14px;}
+button{
+
+background:orange ;
+color: white;
+padding: 12px,28px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+font-size: 16px;
+margin: 10px;
+}
+
+
+
 
 
 </style>
 </head>
 <body>
-<h1> Planet Cards</h1><br>
-<h2>  I will show 3 Diffrent Planets  </h2>
+<h1> Planet Cards</h1>
+<h2>  I will show 2 Diffrent Planets  </h2>
 <button onclick="showplanets()" >  Show Planets  </button>
 <div class="cards"> 
 <div id="card1"></div>
