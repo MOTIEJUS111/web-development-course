@@ -45,10 +45,12 @@ let p1 = new planet("Earth","this Planet has life.");
 let p2 = new planet("mars","This planet is red.");
 
 document.getElementById("card1").innerHTML =
-
 "<div class='card'><div class='planet-name'>" + p1.name + "</div>" +
-
 "<div class='planet-fact'>" + p1.describe() + "</div></div>";
+
+document.getElementById("card2").innerHTML =
+"<div class='card'><div class='planet-name'>" + p2.name + "</div>" +
+"<div class='planet-fact'>" + p2.describe() + "</div></div>";
 
 
 
