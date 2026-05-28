@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title> Planet cards</title>
+<style>
+.body{
+background-color: blue;
+font-family: Arial, Helvetica, sans-serif;
+padding: 15px,10px;
+text-align: center;
+}
+h1{
+color: black;
+
+
+}
+
+
+</style>
+</head>
+<body>
+<h1> Planet Cards</h1><br>
+<h2>  I will show 3 Diffrent Planets  </h2>
+<button onclick="showplanets()" >  Show Planets  </button>
+<div class="cards"> 
+<div id="card1"></div>
+<div id="card2"></div>
+<div id="card3"></div>
+</div>
+<script>
+class planet {
+   constructor (name,fact){
+   this.name = name;
+   this.fact = fact;
+   }
+   describe (){
+    return this.name + ": " + this.fact  
+}
+}
+
+
+function showplanets(){
+let p1 = new planet("Earth","this Planet has life.");
+let p2 = new planet("mars","This planet is red.");
+
+document.getElementById("card1").innerHTML =
+
+"<div class='card'><div class='planet-name'>" + p1.name + "</div>" +
+
+"<div class='planet-fact'>" + p1.describe() + "</div></div>";
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
