@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Power Cards ACP
+    </title>
+</head>
+<body>
+<h1> country Cards</h1>
+<h2>  I will show 2 Diffrent countrys  </h2>
+<button onclick="showcountries()" >  Show Countries  </button>
+<div class="cards"> 
+<div id="card1"></div>
+<div id="card2"></div>
+<div id="card3"></div>
+</div>
+<script>
+class country {
+   constructor (name,fact){
+   this.name = name;
+   this.fact = fact;
+   }
+   describe (){
+    return this.name + ": " + this.fact  
+}
+}
+
+
+function showcountries(){
+let c1 = new country("Russia","this country is the biggest in the entire world.");
+let c2 = new country("lithuania","This country is a Baltic state.");
+
+document.getElementById("card1").innerHTML =
+"<div class='card'><div class='country-name'>" + c1.name + "</div>" +
+"<div class='country-fact'>" + c1.describe() + "</div></div>";
+
+document.getElementById("card2").innerHTML =
+"<div class='card'><div class='country-name'>" + c2.name + "</div>" +
+"<div class='country-fact'>" + c2.describe() + "</div></div>";
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
