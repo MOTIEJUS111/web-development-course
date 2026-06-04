@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Map Array ACP</title>
+</head>
+<body>
+ <h1>Map Array ACP</h1>
+   <p>timesing these numbers by 2  </p>
+   <button onclick="accending()"> click me</button>
+<p id="result"> </p>
+<script>
+var numbers = [1, 1000, 433, 45, 345, 67, 89, 90, 23, 45];
+function times(num) {
+    return num * 10;
+}
+var new_array = numbers.map(times);
+document.getElementById("result").innerHTML = new_array;
+function accending(){
+numbers.sort(function(a, b){
+   return a - b;
+}
+)
+document.getElementById("result").innerHTML = numbers;
+}
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
