@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Error Handling Homework</title>
+</head>
+<body>
+    <h1>Error Handling Homework</h1>
+    <h3> I played football today</h3>
+<p id="error_result"></p>
+<script>
+try{
+ alert("There is an error in this program");
+
+}
+catch(err)
+{
+    document.getElementById("error_result").innerHTML = err.message;
+}
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
