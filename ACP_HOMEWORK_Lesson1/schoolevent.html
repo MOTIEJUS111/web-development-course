@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>School Event tracker</title>
+</head>
+<body>
+<style>
+
+body{
+    background-color:yellow ;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+
+
+button{
+    background:orange;
+    color: red ;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 5px; 
+}
+div{
+    border: 2px solid black;
+    width: 280px;
+    margin: 6px auto;
+    text-align: left;
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+</style>
+<h1> my school event tracker</h1>
+<button onclick="showEvents()">Show Events</button>
+
+<div>JSON Text: <span id="json-text"></span></div>
+<div>School Events Today: <span id="result"></span></div>
+
+<script>
+let show = {
+    even: "Sports Day"
+  
+};
+
+function showEvents(){
+let jsonText = JSON.stringify(show);
+let loadingEvents = JSON.parse(jsonText);  
+
+document.getElementById("json-text").innerHTML=jsonText;
+document.getElementById("result").innerHTML=loadingEvents.even;
+}
+
+
+</script>
+</body>
+</html>
