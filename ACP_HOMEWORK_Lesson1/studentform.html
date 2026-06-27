@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lucky draw</title>
+
+
+<style>
+body{
+font-family: Arial, Helvetica, sans-serif;
+background-color: black ;
+text-align: center;
+padding: 30px;
+}
+
+h1{
+    color: green;
+}
+input{
+    padding: 8px;
+    margin: 5px;
+    border-radius: 6px;
+    border: 5px solid navy;
+    width: 220px;
+}
+button{
+    color: white ; 
+   
+    background-color: orange ;
+}
+</style>
+</head>
+<body>
+<h1>Student Form</h1>
+<p>Enter your name and Year group</p>
+
+<input type="text" id="name" placeholder=" your name" required><br>
+<p id="msg-name"></p>
+
+
+
+<input type="number" id="year" placeholder=" Year group (1-12)" min="1" max="12" required><br>
+<p id="msg-year"></p>
+
+
+<button onclick="checkForm()">Submit</button>
+<p id="result"></p>
+
+<script>
+
+
+
+function checkForm() {
+var name = document.getElementById("name").value;
+var year = document.getElementById("year").value;
+var ok = true;
+
+if (name == "") {
+        document.getElementById("msg-name").textContent = "Please enter your name!";
+        document.getElementById("msg-name").style.color = "red";
+        ok = false;
+      } else {
+        document.getElementById("msg-name").textContent = "Great name!";
+        document.getElementById("msg-name").style.color = "green";
+      }
+
+      if (year == "" || year < 1 || year > 12) {
+        document.getElementById("msg-year").textContent = "Please enter a valid year group (1-12)!";
+        document.getElementById("msg-year").style.color = "red";
+        ok = false;
+      } else {
+        document.getElementById("msg-year").textContent = "Year group saved!";
+        document.getElementById("msg-year").style.color = "green";
+      }
+
+      if (ok == true) {
+         document.getElementById("result").textContent = "Thank you for submitting your details!";
+   
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
