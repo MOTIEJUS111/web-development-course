@@ -1,0 +1,29 @@
+body{
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #fff;
+}
+
+
+.navigation {
+    background-color: #333;
+    border-top: 2px solid #f2a900;
+    padding: 12px 40px !important;
+}
+
+
+.brand-logo {
+   height: 20px;
+   width:auto;
+}
+
+.navigation-links {
+text-decoration: none;
+font-size: 14px;
+font-weight: 500;
+color: #fff;!important;
+}
+
+.navigation-links:hover {
+    color: #f2a900; !important;
+}
