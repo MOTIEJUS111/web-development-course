@@ -37,3 +37,26 @@ transform: scale(1.05);
 }
 
 
+.navigation {
+    background-color: #583706;
+    border-top: 2px solid #000000;
+    padding: 10px 20px !important;
+}
+
+
+.brand-logo {
+   height: 20px;
+   width:auto;
+}
+
+.navigation-links {
+text-decoration: none;
+font-size: 14px;
+font-weight: 500;
+color: #fff !important;
+}
+
+.navigation-links:hover {
+    color: #f2a900 !important;
+}
+
