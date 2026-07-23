@@ -1,0 +1,36 @@
+#socialmedia{
+        background-color: rgb(7, 7, 41);
+}
+
+.m-heading{
+font-weight: 700;
+margin-top: 6px;
+}
+
+.media_link{
+border:2px solid rgb(162, 162, 19);
+border-radius: 4px;
+padding: 14px 18px;
+margin-right: 18px;
+background: transparent;
+text-align: left;
+}
+
+
+.row.pt-5{
+gap: 18px;
+}
+
+.media_link h3{
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.media_link i{
+    font-size: 20px;
+}
+
+.media_link.bg-warning-btn{
+    border:2px solid rgb(232, 232, 33);
+}
