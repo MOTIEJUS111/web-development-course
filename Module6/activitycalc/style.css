@@ -77,5 +77,23 @@ operator:focus, .number:focus, .empty:focus{
   outline: 0;
 }
 
+button:nth-child(4){
+    font-size: 20px;
+    background-color: #5c0909;
+}
+
+button:nth-child(8){
+    font-size: 20px;
+    background-color: #5c0909;
+}
+
+button:nth-child(4){
+    font-size: 20px;
+    background-color: #5c0909;
+}
+
+
+
+
 
 
